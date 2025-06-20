@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,600;1,600&display=swap');
+
+/* Centering everything */
+body {
+    margin: 0;
+    padding: 30px 0; /* adds space from the top */
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: flex-start; /* stick to top vertically */
+    min-height: 100vh;
+}
+
+/* Optional: Center the content inside the container */
+.center-container {
+    text-align: center;
+}
+
+p{
+    font-family: 'Savate';
+}
+
+.delete-button{
+    background-color: darkred;
+    color: white;
+    font-family: Savate;
+    border: none;
+    font-size: 16px;
+    padding: 6px;
+}
+
+.add-button{
+    background-color: green;
+    color: white;
+    font-family: 'Savate';
+    border: none;
+    font-size: 16px;
+    padding: 6px;
+}
+
+.add-button:hover, .delete-button:hover{
+    cursor: pointer;
+}   
+
+.todo-grid, .todo-input-grid{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    row-gap: 10px;
+    column-gap: 10px;
+    font-family: Savate;
+    align-items: left;
+}
+
+.todo-input-grid{
+    margin-bottom: 10px;
+    align-items: stretch;
+}
+
+.name-input, .due-date{
+    font-size: 14px;
+    padding: 6px;
+    font-family: Savate;
+}
+
+.due-date{
+    font-size: 13px;
+}
